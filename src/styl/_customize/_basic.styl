@@ -15,7 +15,7 @@ html
 
 
 body
-	font 16px $Reg
+	font 16px $SFMed
 	line-height 1.45
 	overflow-x hidden
 	min-width 320px
@@ -23,7 +23,27 @@ body
 	opacity 1
 	position relative
 	color $text-color
-	background-color $body-bg
+	// background radial-gradient(113.39% 50.58% at 18.29% 62.8%, #0A3C4D 0%, rgba(53, 44, 80, 0) 100%), linear-gradient(176.42deg, rgba(58, 71, 107, 0) 3.16%, #39466A 12.47%, #433C5D 39.38%) top 597px center no-repeat,  url('../img/backgrounds/bg.jpg') top center no-repeat
+	background url('../img/backgrounds/bg.jpg') top center no-repeat
+	
+
+	&:before
+		pseudo()
+		position absolute
+		top 780px
+		
+		left 0
+		width 100%
+		bottom 0
+		background radial-gradient(113.39% 50.58% at 18.29% 62.8%, #0A3C4D 0%, rgba(53, 44, 80, 0) 100%), linear-gradient(176.42deg, rgba(58, 71, 107, 0) 3.16%, #39466A 12.47%, #433C5D 39.38%) top center no-repeat
+		z-index 3
+		
+
+	
+.sect__content
+	background url('../img/backgrounds/waves-bg.svg') bottom -140px center no-repeat
+	padding-bottom 190px
+	
 
 h1,h2,h3,h4,h5,h6,ul,li
 	margin 0
@@ -73,7 +93,8 @@ img
 	max-width 100%
 	height auto
 	
-
+b,strong
+	font-family $SFBold
 // ========== ========== ========== ========== ========== ==========
 
 // ========== ========== M A I N   S T Y L E S ========== ==========
@@ -109,8 +130,9 @@ img
 	
 .sect
 	&__title
-		font 2em $Bold
-		margin-bottom 40px
+		font 36px $SFBold
+		margin-bottom 65px
+		line-height 43px
 		
 
 
@@ -157,6 +179,9 @@ img
 		
 .dark-bg
 	background-color $dark-bg
-	
+
+
+.t-t-uppercase
+	text-transform uppercase
 
 // ========== ========== ========== ========== ========== ==========

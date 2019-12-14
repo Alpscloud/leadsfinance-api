@@ -25,7 +25,7 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000000">
 
 	<!-- All libs styles -->
-<!-- 	<link rel="stylesheet" href="css/libs.min.css"> -->
+	<link rel="stylesheet" href="css/libs/nouislider.min.css">
 	<!-- Main file with styles -->
 	<link rel="stylesheet" href="css/main.min.css">
 
@@ -40,28 +40,192 @@
 	<!-- CONTENT WRAPPER -->
 	<div class="content__wrapper">
 
-		<!-- Header -->
-		<header class="header">
-	<!-- NAV -->
-	<nav class="nav">
-	<ul class="nav__list">
-		<li class="nav__item"><a href="#" class="nav__link">Link 1</a></li>
-		<li class="nav__item"><a href="#" class="nav__link">Link 2</a></li>
-		<li class="nav__item"><a href="#" class="nav__link">Link 3</a></li>
-		<li class="nav__item"><a href="#" class="nav__link">Link 4</a></li>
-	</ul>
-</nav>
-	<!-- //NAV -->
-</header>
-		<!-- //Header -->
 
 		<!-- Main -->
 		<main class="main">
+			<section class="sect__promo">
+
+				<h2 class="w3c">&nbsp;</h2>
+
+				<a href="/" class="logo">
+					<img src="img/logo.svg" alt="">
+				</a>
+				
+				<div class="container">
+					<div class="promo__block">
+						<span class="api"></span>
+						<div class="promo__block--content light-color">
+							<div class="row align-vertical-center align-horisontal-between promo__row">
+								<div class="promo__title--block ">
+									<h1 class="title"><span class="accent-color">Монетизация</span><br>вашего финансового<br><span class="accent-color">API трафика</span></h1>
+									<p class="subtitle">Скупаем заявки по займам в<br>неограниченном количестве.<br>Оплата за каждую заявку</p>
+								</div>
+
+								<div class="promo__calc--block">
+									<h3 class="promo__calc--title">Узнайте, какую <span class="accent-color">дополнительную<br>прибыль</span> со своего трафика вы<br>можете получать?</h3>
+
+									<div class="promo__calc">
+
+										<div class="row align-horisontal-start align-vertical-end row-nowrap promo__calc--input-row">
+											<p class="promo__calc--input-label">Обьем заявок в сутки</p>
+											<input type="number" max="9999" class="promo__calc--input" name="requestQuantity" id="requestsQuantity">
+										</div>
+
+										<div id="requestsRange" class="promo__calc--input-range"></div>
+
+										<div class="earnings">
+											<h6 class="earnings__title">Ваш заработок:</h6>
+
+											<div class="row align-vertical-center align-horisontal-start earnings__row">
+												<div class="earnings__block">
+													<p><span class="js-earnings">0</span>&#8381;/мес</p>
+													
+												</div>
+												<span class="earnings__notice">Приблизительная<br>сумма за месяц</span>
+											</div>
+										</div>
+
+										<a href="#form" class="btn js-smooth-scroll-link">Готов работать с Вами</a>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="sect__content">
+				<h2 class="w3c">&nbsp;</h2>
+
+				<div class="container ">
+					<p class="light-color support text-center">Поддержка: <a href="mailto:info@leadfinances.com">info@leadfinances.com</a></p>
+
+					<section class="advantages">
+						<h2 class="w3c">&bnsp;</h2>
+						<div class="row row-nowrap advantages__row row-gutters">
+
+							<div class="advantage__wrapper">
+								<div class="advantage">
+									<i class="advantage__ic" style="background-image: url('img/icons/svg/advantage-1.svg');"></i>
+									<p>Быстрая интеграция</p>
+								</div>
+							</div>
+
+							<div class="advantage__wrapper">
+								<div class="advantage">
+									<i class="advantage__ic" style="background-image: url('img/icons/svg/advantage-2.svg');"></i>
+									<p>EPL до 89 рублей<br>по определенным<br>критериям</p>
+								</div>
+							</div>
+
+							<div class="advantage__wrapper">
+								<div class="advantage">
+									<i class="advantage__ic" style="background-image: url('img/icons/svg/advantage-3.svg');"></i>
+									<p>Наши разработчики<br>бесплатно помогают в<br>интеграции</p>
+								</div>
+							</div>
+						</div>
+
+					</section>
+					
+					<!-- Faq -->
+					<section class="faq">
+						<h2 class="w3c">&bnsp;</h2>
+						<!-- Faq item -->
+						<div class="faq__item">
+							<div class="row row-nowrap faq__item--row">
+
+								<div class="faq__question--col">
+									<!-- Question -->
+									<div class="faq__question">
+										<div class="faq__question--header js-faq-header">
+											<h3 class="faq__question--title">Как <b class="accent-color t-t-uppercase">это</b> работает?</h3>
+										</div>
+
+										<div class="faq__question--body js-faq-body">
+											<ul>
+												<li><b>-Если вы МФО</b>, у вас есть заявки, котором вы отказали. Вы можете их просто отправить нам по API автоматически, мы предложим им другие варианты, и заплатим вам за каждую заявку. Вы можете посчитать в форме выше, приблизительный зароботок за месяц, при вашем объеме.</li>
+												<li><b>- Если вы арбитражник</b> или владелец сайта по финансам, мы можем скупать ваши заявки по апи, интегрировав свою форму к вам на сайт или подключиться к вашей.</li>
+												<li><b>- Если вы кредитный специалист</b> и рекламируйте свой сайт, мы можем настроить интеграцию, чтобы все ваши заявки отправлялись к нам по API, мы будем им предлагать после вас другие предложения и вы будете зарабатывать дополнительную прибыль.</li>
+											</ul>
+										</div>
+									</div>
+									<!-- //Question -->
+
+									<!-- Question -->
+									<div class="faq__question">
+										<div class="faq__question--header js-faq-header">
+											<h3 class="faq__question--title">Откуда получается <b class="accent-color">прибыль</b> ?</h3>
+										</div>
+
+										<div class="faq__question--body js-faq-body">
+											<ul>
+												<li><b>-Если вы МФО</b>, у вас есть заявки, котором вы отказали. Вы можете их просто отправить нам по API автоматически, мы предложим им другие варианты, и заплатим вам за каждую заявку. Вы можете посчитать в форме выше, приблизительный зароботок за месяц, при вашем объеме.</li>
+												<li><b>- Если вы арбитражник</b> или владелец сайта по финансам, мы можем скупать ваши заявки по апи, интегрировав свою форму к вам на сайт или подключиться к вашей.</li>
+												<li><b>- Если вы кредитный специалист</b> и рекламируйте свой сайт, мы можем настроить интеграцию, чтобы все ваши заявки отправлялись к нам по API, мы будем им предлагать после вас другие предложения и вы будете зарабатывать дополнительную прибыль.</li>
+											</ul>
+										</div>
+									</div>
+									<!-- //Question -->
+
+
+								</div>
+
+								<div class="faq__img--col">
+									<img src="img/graphic.svg" alt="">
+								</div>
+							</div>
+						</div>
+						<!-- //Faq item -->
+					</section>
+					<!-- //Faq -->
+
+					<!-- Form -->
+					<section class="sect__form">
+						<h2 class="sect__title text-center">Узнать подробнее как зарабатывать<br>на <span class="accent-color">API трафике</span></h2>
+
+						<div class="form__block">
+							<form class="js-form">
+								<!-- Hidden inputs -->
+								<input type="hidden" name="project_name" value="LeadFinances Api">
+								<input type="hidden" name="form_subject" value="Заявка">
+
+								<div class="row inputs__row align-horisontal-center">
+									<div class="input__wrapper">
+										<input type="text" class="input js-input" placeholder="Имя">
+									</div>
+									<div class="input__wrapper">
+										<input type="text" class="input js-input Js-input-phone" placeholder="Телефон">
+									</div>
+								</div>
+
+								<div class="text-center">
+									<button class="btn" type="submit">Узнать подробнее</button>
+								</div>
+							</form>
+						</div>
+					</section>
+					<!-- //Form -->
+				</div>
+				<!-- //container -->
+			</section>
 		</main>
 		<!-- //Main -->
 
 		<!-- Footer -->
-		<footer class="footer"></footer>
+		<footer class="footer">
+	<div class="container">
+		<div class="row align-vertical-center align-horisontal-between">
+			<a href="/" class="logo">
+				<img src="img/logo.svg" alt="">
+			</a>
+
+			<p class="support">Поддержка: <a href="mailto:info@leadfinances.com">info@leadfinances.com</a></p>
+		</div>
+	</div>
+	<!-- //container -->
+</footer>
 		<!-- //Footer -->
 
 	</div>
@@ -72,7 +236,7 @@
 <!-- Google map -->
 <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBR5vIGzW3iFwxgUDP3TEFZR66J5LzJdhY"></script> -->
 <!-- All libs scripts -->
-<!-- 	<script src="js/libs.min.js"></script> -->
+	<script src="js/libs/nouislider.min.js"></script>
 <!-- Main file with scripts -->
 <script src="js/common.min.js"></script>
 </body>
