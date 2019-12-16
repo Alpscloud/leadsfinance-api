@@ -1,63 +1,72 @@
 {% include '../parts/head.html' %}
 <body>
+
+
 	
 	<!-- CONTENT WRAPPER -->
 	<div class="content__wrapper">
 
+		{% include '../parts/components/preloader.html' %}
+		{% include '../parts/components/popup.html' %}
+
 
 		<!-- Main -->
 		<main class="main">
-			<section class="sect__promo">
 
+			<section class="sect__promo--wrapper">
 				<h2 class="w3c">&nbsp;</h2>
+				<section class="sect__promo">
+					<h2 class="w3c">&nbsp;</h2>
 
-				<a href="/" class="logo">
-					<img src="img/logo.svg" alt="">
-				</a>
-				
-				<div class="container">
-					<div class="promo__block">
-						<span class="api"></span>
-						<div class="promo__block--content light-color">
-							<div class="row align-vertical-center align-horisontal-between promo__row">
-								<div class="promo__title--block ">
-									<h1 class="title"><span class="accent-color">Монетизация</span><br>вашего финансового<br><span class="accent-color">API трафика</span></h1>
-									<p class="subtitle">Скупаем заявки по займам в<br>неограниченном количестве.<br>Оплата за каждую заявку</p>
-								</div>
+					<a href="/" class="logo">
+						<img src="img/logo.svg" alt="">
+					</a>
+					
+					<div class="container">
+						<div class="promo__block">
+							<span class="api js-item-parallax" data-parallax-direction="vertical-top" data-parallax-speed="0.3"></span>
+							<div class="promo__block--content light-color">
+								<div class="row align-vertical-center align-horisontal-between promo__row">
+									<div class="promo__title--block ">
+										<h1 class="title"><span class="accent-color">Монетизация</span><br>вашего финансового<br><span class="accent-color">API трафика</span></h1>
+										<p class="subtitle">Скупаем заявки по займам в<br>неограниченном количестве.<br><span>Оплата за каждую заявку</span></p>
+									</div>
 
-								<div class="promo__calc--block">
-									<h3 class="promo__calc--title">Узнайте, какую <span class="accent-color">дополнительную<br>прибыль</span> со своего трафика вы<br>можете получать?</h3>
+									<div class="promo__calc--block">
+										<h3 class="promo__calc--title">Узнайте, какую <span class="accent-color">дополнительную<br>прибыль</span> со своего трафика вы<br>можете получать?</h3>
 
-									<div class="promo__calc">
+										<div class="promo__calc">
 
-										<div class="row align-horisontal-start align-vertical-end row-nowrap promo__calc--input-row">
-											<p class="promo__calc--input-label">Обьем заявок в сутки</p>
-											<input type="number" max="9999" class="promo__calc--input" name="requestQuantity" id="requestsQuantity">
-										</div>
-
-										<div id="requestsRange" class="promo__calc--input-range"></div>
-
-										<div class="earnings">
-											<h6 class="earnings__title">Ваш заработок:</h6>
-
-											<div class="row align-vertical-center align-horisontal-start earnings__row">
-												<div class="earnings__block">
-													<p><span class="js-earnings">0</span>&#8381;/мес</p>
-													
-												</div>
-												<span class="earnings__notice">Приблизительная<br>сумма за месяц</span>
+											<div class="row align-horisontal-start align-vertical-end row-nowrap promo__calc--input-row">
+												<p class="promo__calc--input-label">Обьем заявок в сутки</p>
+												<input type="number" min="0" max="9999" class="promo__calc--input" name="requestQuantity" id="requestsQuantity">
 											</div>
+
+											<div id="requestsRange" class="promo__calc--input-range"></div>
+
+											<div class="earnings">
+												<h6 class="earnings__title">Ваш заработок:</h6>
+
+												<div class="row align-vertical-center align-horisontal-start earnings__row">
+													<div class="earnings__block">
+														<p><span class="js-earnings">0</span>&#8381;/мес</p>
+														
+													</div>
+													<span class="earnings__notice">Приблизительная<br>сумма за месяц</span>
+												</div>
+											</div>
+
+											<a href="#form" class="btn js-smooth-scroll-link">Готов работать с Вами</a>
+
 										</div>
-
-										<a href="#form" class="btn js-smooth-scroll-link">Готов работать с Вами</a>
-
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+				</section>
 			</section>
+			
 
 			<section class="sect__content">
 				<h2 class="w3c">&nbsp;</h2>
@@ -96,11 +105,13 @@
 					<!-- Faq -->
 					<section class="faq">
 						<h2 class="w3c">&bnsp;</h2>
+
+						<span class="traffic js-item-parallax" data-parallax-direction="vertical-top" data-parallax-speed="0.2"></span>
 						<!-- Faq item -->
 						<div class="faq__item">
 							<div class="row row-nowrap faq__item--row">
 
-								<div class="faq__question--col">
+								<div class="faq__question--col js-item-parallax" data-parallax-direction="vertical-top" data-parallax-speed="0.05">
 									<!-- Question -->
 									<div class="faq__question">
 										<div class="faq__question--header js-faq-header">
@@ -125,9 +136,7 @@
 
 										<div class="faq__question--body js-faq-body">
 											<ul>
-												<li><b>-Если вы МФО</b>, у вас есть заявки, котором вы отказали. Вы можете их просто отправить нам по API автоматически, мы предложим им другие варианты, и заплатим вам за каждую заявку. Вы можете посчитать в форме выше, приблизительный зароботок за месяц, при вашем объеме.</li>
-												<li><b>- Если вы арбитражник</b> или владелец сайта по финансам, мы можем скупать ваши заявки по апи, интегрировав свою форму к вам на сайт или подключиться к вашей.</li>
-												<li><b>- Если вы кредитный специалист</b> и рекламируйте свой сайт, мы можем настроить интеграцию, чтобы все ваши заявки отправлялись к нам по API, мы будем им предлагать после вас другие предложения и вы будете зарабатывать дополнительную прибыль.</li>
+												<li><b>Договоренности более с 80 Микрофинансовых организации</b>( много offline и приватных компаний), с которыми у нас специальные условия, из-за объема. Ваш заработок идет от них за выданные займы или корректные заявки. Мы дополнительно монетизируем ваш трафик с помощью наработанных методик, через такие точки касания как: смс, емайлы, месседжеры, автообзвоны и пр.</li>
 											</ul>
 										</div>
 									</div>
@@ -136,7 +145,7 @@
 
 								</div>
 
-								<div class="faq__img--col">
+								<div class="faq__img--col js-item-parallax" data-parallax-direction="vertical-bottom" data-parallax-speed="0.05">
 									<img src="img/graphic.svg" alt="">
 								</div>
 							</div>
@@ -146,13 +155,13 @@
 					<!-- //Faq -->
 
 					<!-- Form -->
-					<section class="sect__form">
+					<section class="sect__form" id="form">
 						<h2 class="sect__title text-center">Узнать подробнее как зарабатывать<br>на <span class="accent-color">API трафике</span></h2>
 
 						<div class="form__block">
 							<form class="js-form">
 								<!-- Hidden inputs -->
-								<input type="hidden" name="project_name" value="LeadFinances Api">
+								<input type="hidden" name="project_name" value="LeadsFinances Api">
 								<input type="hidden" name="form_subject" value="Заявка">
 
 								<div class="row inputs__row align-horisontal-center">
@@ -160,8 +169,15 @@
 										<input type="text" class="input js-input" placeholder="Имя">
 									</div>
 									<div class="input__wrapper">
-										<input type="text" class="input js-input Js-input-phone" placeholder="Телефон">
+										<input type="text" class="input js-input js-phone-input" placeholder="Телефон">
 									</div>
+								</div>
+
+								<div class="checkbox__wrapper text-center">
+									<label class="checkbox__label">
+										<input name="terms" type="checkbox" checked>
+										<span class="checkbox">Я принимаю <a href="#" class="js-open-terms-popup-btn">условия пользовательского соглашения</a></span>
+									</label>
 								</div>
 
 								<div class="text-center">

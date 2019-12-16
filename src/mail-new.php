@@ -3,7 +3,7 @@
 $method = $_SERVER['REQUEST_METHOD'];
 
 // Выносим переменную на все случаи жизни вне проверки на POST/GET
-$admin_email = array('admin@email'); // первым поставь почту, на которую будет указывать ответ и т.п.
+$admin_email = array('info@geoseo.ru'); // первым поставь почту, на которую будет указывать ответ и т.п.
 
 //Script Foreach
 $c = true;
@@ -49,7 +49,7 @@ function adopt($text) {
 
 $headers = "MIME-Version: 1.0" . PHP_EOL .
 "Content-Type: text/html; charset=utf-8" . PHP_EOL .
-'From: '.adopt($project_name).' <no-reply@domain>' . PHP_EOL .  // Вот тут как раз мы и используем первый адрес
+'From: '.adopt($project_name).' <no-reply@geoseo.ru>' . PHP_EOL .  // Вот тут как раз мы и используем первый адрес
 'Reply-To: '.$admin_email[0].'' . PHP_EOL;													// -------- ---------
 
 foreach ($admin_email as $mail) {															// Открываем цикл перебором всех адресов в массиве
